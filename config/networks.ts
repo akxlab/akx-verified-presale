@@ -13,7 +13,7 @@ export const Networks:NetworksUserConfig = {
         url: `${process.env.MUMBAI_URL}`,
         accounts: [`${process.env.PRIVATE_KEY}`],
         gas: 8012388,
-        gasPrice: 80000000000,
+        gasPrice: 50000000000,
         allowUnlimitedContractSize: true,
        
     },

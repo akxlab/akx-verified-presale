@@ -75,10 +75,6 @@ const O = await deploy("AKXPriceOracle", {
 
   const akxImpl = await upgrades.erc1967.getImplementationAddress(AKX.address);
 
-  /*await hre.run("verify:verify", {
-    address: akxImpl,
-    constructorArguments: []
-  });*/
 
 
 };

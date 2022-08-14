@@ -49,6 +49,7 @@ contract LABZ is
         _setupRole(MINTER_ROLE, minter);
          grantRole(MINTER_ROLE, msg.sender);
          maxSupply = 300000000000 * 10 ** 18;
+         setState(SALE_STARTED);
     }
 
     function setState(bytes32 _state) public onlyRole(MINTER_ROLE) {
@@ -117,7 +118,8 @@ contract LABZ is
         grantRole(MINTER_ROLE, newMinter);
     }
 
-    function _transfer(address from, address to, uint256 amount) internal onlyStateActive(SALE_COMPLETED) override {
+    function _transfer(address from, address to, uint256 amount) internal override onlyStateActive(SALE_STARTED) {
+        require(from != address(this) , "cannot transfer");
         super._transfer(from, to, amount);
     }
 
