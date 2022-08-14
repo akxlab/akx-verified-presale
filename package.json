@@ -1,0 +1,22 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "test": "NODE_ENV=development npx hardhat test",
+    "analyze": "slither "
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@openzeppelin/contracts": "^4.7.2",
+    "@openzeppelin/contracts-upgradeable": "^4.7.2",
+    "@openzeppelin/hardhat-upgrades": "^1.20.0",
+    "custom-env": "^2.0.1",
+    "hardhat": "^2.10.1"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.2",
+    "@types/libsodium-wrappers": "^0.7.9",
+    "hardhat-deploy": "^0.11.12",
+    "libsodium-wrappers": "^0.7.10",
+    "solidity-analyzer": "^1.0.0"
+  }
+}

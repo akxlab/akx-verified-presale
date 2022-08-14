@@ -1,0 +1,22 @@
+{
+    "solidity-va.hover": false,
+    "slither.solcPath": "solc",
+    "slither.hiddenDetectors": [
+        "assembly",
+        "boolean-equal",
+        "controlled-delegatecall",
+        "delegatecall-loop",
+        "deprecated-standards",
+        "external-function",
+        "low-level-calls",
+        "naming-convention",
+        "pragma",
+        "reentrancy-benign",
+        "similar-names",
+        "solc-version",
+        "timestamp",
+        "unchecked-lowlevel",
+        "unused-return",
+        "variable-scope"
+    ]
+}
