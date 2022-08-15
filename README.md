@@ -7,3 +7,6 @@
 - SECURITY: Maximum of 1,000,000 LABZ per vip holders
 - SECURITY: Cannot transfer to other or sell the token before the vip sale is completed
 - SECURITY: Deployer cannot mint tokens only the proxy can (AKX Core Contract)
+- SECURITY: Reentrancy guards applied to all exploitable functions
+- PERK: NON-TRANSFERABLE VIP Nft is minted as a unique nft to the buyer carrying SBT (soulbound token) like information
+
