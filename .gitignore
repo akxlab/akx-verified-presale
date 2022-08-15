@@ -4,6 +4,9 @@ coverage
 coverage.json
 typechain
 typechain-types
+deployments
+abi
+notused
 
 #Hardhat files
 cache

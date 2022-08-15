@@ -180,8 +180,40 @@ describe('AKX', function () {
         });
     });
 
+    describe("vip sale functions",  function() {
+
+        it("should be able to buy LABZ", async function() {
+            const signers = await ethers.getSigners();
+            const A = await ethers.getContractAt("AKX", JSON.parse(AKX1).address);
+            A.connect(signers[0]);
+            let tx;
+            try {
+                tx = await A.buy({from: signers[0].address, value: ethers.utils.parseEther("1")});
+                await tx.wait();
+                if(tx.hash) {
+                    return true;
+                }
+            } catch(err) {
+                console.log(err);
+                return false;
+            }
+        
+        });
+
+        it("shouldn't be able to transfer LABZ to another account", async function() {
+            const signers = await ethers.getSigners();
+            const account1 = signers[1];
+            const account2 = signers[2];
+            const owner = signers[0];
+            const Token = await ethers.getContractAt("LABZ", JSON.parse(T).address);
+            Token.connect(signers[0]);
+            // owner gives 1 token to account 1 = cannot
+            await expect(Token.transfer(account1.address, ethers.utils.parseEther("1"))).to.revertedWith("cannot transfer");
+        });
 
     });
+
+});
 
    
 });
