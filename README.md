@@ -14,3 +14,21 @@
 
 - MULTISIGNATURE WALLET: GNOSIS
 - GNOSIS WALLET ADDRESS: 0x5dA5aE3f9E4ee7682A2b0a233E4553A21b4f0044 (https://polygonscan.com/address/0x5dA5aE3f9E4ee7682A2b0a233E4553A21b4f0044)
+
+
+## Testing Methodology
+
+- Tests have been performed on functions that can affect treasury and token balances; 
+- Slither has been used to perform vulnerability testing
+- Local tests and Remote (Mumbai Polygon Testnet) were performed
+
+## Network Availability
+
+### POLYGON: 
+
+- Contracts have been deployed to the polygon network
+
+### ETHEREUM:
+
+- NOT DEPLOYED. WAITING ON NETWORK UPDATE. MORE THAN LIKELY WILL BE AFTER VIP SALE
+
