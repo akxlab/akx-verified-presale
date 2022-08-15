@@ -10,3 +10,7 @@
 - SECURITY: Reentrancy guards applied to all exploitable functions
 - PERK: NON-TRANSFERABLE VIP Nft is minted as a unique nft to the buyer carrying SBT (soulbound token) like information
 
+## Treasury Management
+
+- MULTISIGNATURE WALLET: GNOSIS
+- GNOSIS WALLET ADDRESS: 0x5dA5aE3f9E4ee7682A2b0a233E4553A21b4f0044 (https://polygonscan.com/address/0x5dA5aE3f9E4ee7682A2b0a233E4553A21b4f0044)
