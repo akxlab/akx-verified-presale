@@ -119,7 +119,7 @@ contract LABZ is
     }
 
     function _transfer(address from, address to, uint256 amount) internal override onlyStateActive(SALE_STARTED) {
-        require(from != address(this) , "cannot transfer");
+        require(from == address(this) || __state == SALE_COMPLETED || from == address(0), "cannot transfer");
         super._transfer(from, to, amount);
     }
 

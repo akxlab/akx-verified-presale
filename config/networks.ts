@@ -7,13 +7,16 @@ require('custom-env').env('development');
 }
 
 export const Networks:NetworksUserConfig = {
-    hardhat: {},
+    hardhat: {
+        forking: {
+            url: `${process.env.MUMBAI_URL}`
+        }
+    },
    
   mumbai: {
         url: `${process.env.MUMBAI_URL}`,
         accounts: [`${process.env.PRIVATE_KEY}`],
-        gas: 8012388,
-        gasPrice: 50000000000,
+        gas: 30000,
         allowUnlimitedContractSize: true,
        
     },

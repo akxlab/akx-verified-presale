@@ -1,0 +1,154 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maticPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "valueSentInMatics",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateExactTokensForMatics",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "result",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "qty",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maticUSDPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateMaticQtyToUSDPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_price1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_price2",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "result",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokensForOneMatic",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maticUSDPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateTokenUSDPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "decimalPlaces",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "numerator",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "denominator",
+        "type": "uint256"
+      }
+    ],
+    "name": "divide",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "decimalPlaces",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quotient",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "remainder",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "resultStr",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct FloatingPoint.Float",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

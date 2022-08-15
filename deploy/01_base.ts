@@ -21,7 +21,7 @@ const O = await deploy("AKXPriceOracle", {
     args: [],
     log: true,
     autoMine: true,
-    waitConfirmations:3,
+   waitConfirmations:0
  });
 
  const T = await deploy("LABZ", {
@@ -29,7 +29,7 @@ const O = await deploy("AKXPriceOracle", {
     args: [deployer],
     log: true,
     autoMine: true,
-    waitConfirmations:3,
+   waitConfirmations:0
   });
 
 
@@ -42,7 +42,7 @@ const O = await deploy("AKXPriceOracle", {
   const akx = await ethers.getContractFactory("AKX");
   const akxArgs = [O.address, T.address, NFT.address, deployer];
   const AKX = await upgrades.deployProxy(akx, akxArgs, {kind: "uups", initializer: "initialize"});
-  await AKX.deployTransaction.wait(3);
+  await AKX.deployTransaction.wait(0);
 
   const nftInstance = await ethers.getContractAt("VipNfts", NFT.address, deployers[0]);
   nftInstance.connect(deployers[0]);
